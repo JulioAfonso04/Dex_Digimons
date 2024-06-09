@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Digidex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+    <input type="text" v-model="pesquisa" placeholder="Pesquisar Digimon">
+    <ul>
+        <li v-for="digimon in digimonsFiltro" :key="digimon.name" :class="getLevelClass(digimon.level)">
+            <div class="digimon-card">
+                <img :src="digimon.img" alt="digimon-image">
+                <p class="digimon-name">{{ digimon.name.toUpperCase() }}</p>
+                <div v-if="digimon.detalhes" class="detalhes">
+                    <p>Nível: {{ digimon.level }}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+
+<script src="index.js"></script>

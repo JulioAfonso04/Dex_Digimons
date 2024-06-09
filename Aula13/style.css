@@ -1,0 +1,66 @@
+[v-cloak] {
+    display: none;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+.digimon-card {
+    text-align: center;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.digimon-card img {
+    width: 160px;
+    height: 160px;
+}
+
+.digimon-name {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333333;
+}
+
+.fresh { background-color: #9BCAD4; }
+.in-training { background-color: #FF9E85; }
+.rookie { background-color: #FFC58F; }
+.champion { background-color: #FFEC8B; }
+.ultimate { background-color: #FFB69E; }
+.mega { background-color: #FF82B8; }
+.armor { background-color: #6EC7B8; }
